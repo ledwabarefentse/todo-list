@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Builds
+client/dist/
+server/dist/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Docker
+*.pid
