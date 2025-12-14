@@ -1,0 +1,3 @@
+NAME                 IMAGE              COMMAND                  SERVICE   CREATED         STATUS         PORTS
+todo-list-client-1   todo-list-client   "/docker-entrypoint.…"   client    7 minutes ago   Up 7 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+todo-list-server-1   todo-list-server   "docker-entrypoint.s…"   server    7 minutes ago   Up 7 minutes   0.0.0.0:3001->3001/tcp, [::]:3001->3001/tcp
