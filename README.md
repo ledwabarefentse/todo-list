@@ -1,27 +1,22 @@
-# Todo List (SDLC Practice App)
+# Tiny Tasks (Todo List)
 
-## Goal
-Ship a minimal tasks app that covers the full SDLC: requirements, design, implementation, testing, deployment, and maintenance.
+## What this is
+A lightweight task tracker with a React frontend and Node/Express backend.
 
-## Scope (v1)
-- Create a task (title required, optional due date)
-- Toggle done/not done
-- Filter tasks (All / Open / Done)
-- Persist tasks between refreshes
+## How to run (recommended)
+### Prereqs
+- Docker + Docker Compose
 
-## Out of Scope (v1)
-- Authentication, sharing, reminders, tags, search, mobile app
+### Start
+docker compose up --build
 
-## Success Metrics
-- App supports add/toggle/filter + persistence
-- Minimum 5 automated tests passing
-- Deployed (URL or reproducible Docker run)
+### Open
+- App: http://localhost:8080
+- API: http://localhost:3001/health
 
-## Timeline
-- v1 delivered in 3–7 days
+### Stop
+docker compose down
 
-## Roles (single-person simulation)
-- PM: scope, milestones, acceptance criteria
-- Dev: build features
-- QA: test plan + test execution
-- DevOps: deploy + release notes
+## Notes
+- Data persists in `server/data` (mounted into the container)
+- If port 3001 is busy, stop the other service using it or change docker-compose ports.

@@ -5,8 +5,10 @@ services:
       - "3001:3001"
     volumes:
       - ./server/data:/app/data
+    restart: unless-stopped
 
   client:
     build: ./client
     ports:
       - "8080:80"
+    restart: unless-stopped
